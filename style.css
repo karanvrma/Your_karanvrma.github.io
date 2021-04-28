@@ -1,0 +1,124 @@
+* {
+  box-sizing: box-border; 
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font: poppins;
+}
+
+#main {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 5px 10px 30px rgba(0 ,0 ,0 ,0.02); /*a very light transparent line came by this, which divides the whole window into 2 sections*/
+  z-index:1; /*a layer type or a 3d type effect wll come in nav bar*/
+}
+
+.logo img{
+  height: 48px;
+  border-radius: 12px; /*to make the logo rounded from both the end*/
+
+}
+
+.menu{
+  list-style: none; /*dots will get removed in unordered list*/ 
+  display: flex; /*to put them in a one line or in a row*/
+}
+
+.menu li a{
+  height: 40px;
+  line-height: 43px; /*width*/
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+a {
+  text-decoration: none; /*underline words or purple aspect will get removed*/
+}
+
+.hey { /* here we beautified the Say Hi!*/
+  color: #39bfbd;
+  font-weight: 500;
+  font-size: 0.9em;
+  border-bottom: 2px solid #39bfbd;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+}
+
+.image img{ /*In div class=image then in img*/
+  width: 100%;
+  height:100%;
+  object-fit: contain; /*we dont want to overflow the entire thing but want to contained it into the image class itself*/  
+}
+
+.content {
+  display: flex;
+  width: 90%;
+  justify-content: space-around; /*flex items with space before, between, and after the lines*/
+  align-items: center; /*here all should be in center*/
+  position: absolute; /*here taking absolute with respect to the screen*/
+  left: 3%;
+  right: 50%;
+  translate: (-50%, -50%); /*Moves the image by the 50% along the X and Y-axis*/
+}
+
+.main-text {
+  width: 500px;
+}
+
+.main-text h1 {
+  font-size: 3.5em;
+  color: #1c3548;
+  margin: 0px 0px 10px 0px;
+  line-height: 60px; /*height of the text*/
+}
+
+.main-text p {
+  color: gray;
+}
+
+.resume-btn {
+  width: 190px;
+  height: 44px;
+  display: flex;
+  justify-content: center; /*aligns the flex items at the center of the box*/
+  align-items: center;
+  color: white;
+  background-color: #1db096;
+  border-radius: 20px; /*to make the button rounded from both the end*/
+  box-shadow: 5px 10px 30px  rgba(24, 139, 119, 0.2); /*for the 3d look of button*/
+}
+/*resume-btn:hover = this means that resume-btn is in a hover state*/
+.resume-btn:hover {  /*when we are hovering over the button it will change the color a little bit or a animation basically*/
+  background-color: #23cdaf;
+  transition: all ease 0.2s;
+}
+
+.menu li a:hover {
+  background-color: #39bfbd;
+  color: white;
+  box-shadow: 5px 10px 30px  rgba(24, 139, 119, 0.2); /*a shadow color behind the nav bar elements*/
+  transition: all ease 0.2s; 
+}
